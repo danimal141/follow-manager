@@ -7,7 +7,9 @@ module.exports = {
   'extends': [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
   'globals': {
     'Atomics': 'readonly',
@@ -24,14 +26,11 @@ module.exports = {
   },
   'plugins': [
     '@typescript-eslint',
+    'prettier',
     'react'
   ],
   'rules': {
-    'semi': ['error', 'never'],
-    'indent': ['error', 2],
-    'quotes': ['error', 'single'],
-    'linebreak-style': ['error', 'unix'],
-    'space-infix-ops': 'error',
+    'prettier/prettier': 'error'
   },
   'settings': {
     'react': {
