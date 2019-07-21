@@ -32,5 +32,10 @@ module.exports = {
     'quotes': ['error', 'single'],
     'linebreak-style': ['error', 'unix'],
     'space-infix-ops': 'error',
+  },
+  'settings': {
+    'react': {
+      'version': 'detect'
+    }
   }
 }
