@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "esnext"],
+    "jsx": "react-native",
+    "module": "es6",
+    "moduleResolution": "node",
+    "declaration": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+  }
+}
