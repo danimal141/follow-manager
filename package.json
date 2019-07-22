@@ -53,7 +53,6 @@
         }
       }
     },
-    "setupFiles": [],
     "testMatch": [
       "<rootDir>/**/?(*.)spec.@(t|j)s?(x)"
     ],
