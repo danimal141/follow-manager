@@ -27,10 +27,13 @@ module.exports = {
   'plugins': [
     '@typescript-eslint',
     'prettier',
-    'react'
+    'react',
   ],
   'rules': {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "vars": "local",
+    }],
   },
   'settings': {
     'react': {
