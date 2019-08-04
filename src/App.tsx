@@ -1,19 +1,15 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import * as React from 'react'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
+import { Provider } from 'react-redux'
+import configureStore from './configureStore'
+import Root from './components/Root'
+
+const store = configureStore()
 
 const App = () => (
-  <View style={styles.container}>
-    <Text>Open up App.tsx to start working on your app!</Text>
-  </View>
+  <Provider store={store}>
+    <Root />
+  </Provider>
 )
 
-export default React.memo(App)
+export default App

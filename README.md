@@ -10,6 +10,15 @@
 
 - `yarn ios`
 
+#### How to debug
+
+```
+$ brew update && brew cask install react-native-debugger
+$ `open 'rndebugger://set-debugger-loc?host=localhost&port=19001'`
+
+Press 'command + d' on the Simulator -> Select 'Debug Remote JS' to start debugging
+```
+
 ### Android
 
 - `yarn android`
